@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+
+      <h3>STATS</h3>
+
+      <table>
+         <thead>
+            <tr>
+               <th>id</th>
+               <th>url</th>
+               <th>count</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for site in all_sites %}
+               <tr>
+                  <td>{{ site.id }}</td>
+                  <td>{{ site.url }}</td>
+                  <td>{{ site.count }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+
+   </body>
+</html>
